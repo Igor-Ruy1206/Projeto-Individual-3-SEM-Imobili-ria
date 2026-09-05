@@ -1,0 +1,64 @@
+.etiqueta {
+  position: relative;
+  background: var(--cor-papel);
+  border: 1.5px dashed var(--cor-linha);
+  border-radius: var(--raio);
+  padding: 22px 18px 18px;
+  box-shadow: var(--sombra-papel);
+}
+
+.furo {
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--cor-papel);
+  border: 1.5px dashed var(--cor-linha);
+}
+
+.tipo {
+  display: inline-block;
+  font-family: var(--fonte-dado);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cor-latao);
+  border: 1px solid var(--cor-latao);
+  border-radius: 999px;
+  padding: 2px 10px;
+  margin-bottom: 10px;
+}
+
+.preco {
+  font-family: var(--fonte-dado);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--cor-selo);
+  margin: 0 0 8px;
+}
+
+.endereco {
+  font-family: var(--fonte-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--cor-tinta);
+}
+
+.localidade {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  color: var(--cor-tinta-suave);
+}
+
+.area {
+  margin: 10px 0 0;
+  font-family: var(--fonte-dado);
+  font-size: 0.78rem;
+  color: var(--cor-tinta-suave);
+  border-top: 1px dashed var(--cor-linha);
+  padding-top: 8px;
+}

@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS imoveis (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    logradouro VARCHAR(150) NOT NULL,
+    numero INT NOT NULL,
+    bairro VARCHAR(100) NOT NULL,
+    cidade VARCHAR(100) NOT NULL,
+    preco DECIMAL(12,2) NOT NULL,
+    area_m2 DOUBLE,
+    tipo VARCHAR(20) NOT NULL
+);

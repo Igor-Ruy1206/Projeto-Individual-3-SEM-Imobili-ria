@@ -1,0 +1,55 @@
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px 20px;
+}
+
+.status {
+  font-family: var(--fonte-dado);
+  font-size: 0.9rem;
+  color: var(--cor-tinta-suave);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.vazio {
+  text-align: center;
+  padding: 56px 24px;
+  border: 1.5px dashed var(--cor-linha);
+  border-radius: var(--raio);
+  color: var(--cor-tinta-suave);
+}
+
+.vazio p:first-child {
+  font-family: var(--fonte-display);
+  font-size: 1.15rem;
+  color: var(--cor-tinta);
+  margin: 0 0 6px;
+}
+
+.erro {
+  padding: 24px;
+  border: 1.5px solid var(--cor-selo);
+  background: #f3ddd6;
+  border-radius: var(--raio);
+  color: var(--cor-selo-escuro);
+}
+
+.carimboErro {
+  display: inline-block;
+  font-family: var(--fonte-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 2px solid var(--cor-selo);
+  border-radius: 4px;
+  padding: 2px 10px;
+  transform: rotate(-4deg);
+  margin-bottom: 10px;
+}
+
+.dica {
+  font-size: 0.82rem;
+  opacity: 0.85;
+  margin: 4px 0 0;
+}

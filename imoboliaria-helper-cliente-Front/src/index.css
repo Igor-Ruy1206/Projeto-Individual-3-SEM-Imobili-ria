@@ -1,0 +1,64 @@
+:root {
+  --cor-papel: #f1e9d8;
+  --cor-papel-escuro: #e4d8bc;
+  --cor-tinta: #1f3a34;
+  --cor-tinta-suave: #4b665d;
+  --cor-selo: #a23e2b;
+  --cor-selo-escuro: #7e2e20;
+  --cor-linha: #c7b98f;
+  --cor-latao: #9c7a34;
+  --cor-sucesso: #3f6b4a;
+
+  --fonte-display: 'Fraunces', Georgia, serif;
+  --fonte-corpo: 'Inter', system-ui, sans-serif;
+  --fonte-dado: 'IBM Plex Mono', 'Courier New', monospace;
+
+  --raio: 3px;
+  --sombra-papel: 0 1px 2px rgba(31, 58, 52, 0.08), 0 8px 24px rgba(31, 58, 52, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--cor-tinta);
+  font-family: var(--fonte-corpo);
+  background-color: var(--cor-papel);
+  /* Textura sutil de papel quadriculado, referência às plantas/cadastros imobiliários */
+  background-image: linear-gradient(var(--cor-linha) 1px, transparent 1px),
+    linear-gradient(90deg, var(--cor-linha) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-attachment: fixed;
+}
+
+body::selection,
+*::selection {
+  background: var(--cor-selo);
+  color: var(--cor-papel);
+}
+
+button {
+  font-family: inherit;
+}
+
+input,
+select {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
