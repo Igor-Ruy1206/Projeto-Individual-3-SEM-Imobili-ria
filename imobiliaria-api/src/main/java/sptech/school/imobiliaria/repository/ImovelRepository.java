@@ -12,10 +12,6 @@ import java.sql.Statement;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Acesso a dados via JdbcTemplate puro, conforme exigido pelo enunciado
- * (sem JPA/Hibernate).
- */
 @Repository
 public class ImovelRepository {
 

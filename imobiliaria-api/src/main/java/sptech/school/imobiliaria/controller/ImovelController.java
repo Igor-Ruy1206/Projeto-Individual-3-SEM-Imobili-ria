@@ -19,19 +19,16 @@ public class ImovelController {
         this.service = service;
     }
 
-    // GET /imoveis -> 200
     @GetMapping
     public ResponseEntity<List<Imovel>> listar() {
         return ResponseEntity.ok(service.listarTodos());
     }
 
-    // GET /imoveis/{id} -> 200 ou 404
     @GetMapping("/{id}")
     public ResponseEntity<Imovel> buscarPorId(@PathVariable Long id) {
         return ResponseEntity.ok(service.buscarPorId(id));
     }
 
-    // POST /imoveis -> 201
     @PostMapping
     public ResponseEntity<Imovel> cadastrar(@RequestBody Imovel imovel) {
         Imovel salvo = service.cadastrar(imovel);

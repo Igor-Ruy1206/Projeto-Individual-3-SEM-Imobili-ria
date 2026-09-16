@@ -10,10 +10,6 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Regras de negócio do recurso Imovel: validação antes de persistir
- * e tradução de "não encontrado" para exceção específica.
- */
 @Service
 public class ImovelService {
 

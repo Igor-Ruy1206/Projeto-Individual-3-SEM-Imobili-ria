@@ -2,10 +2,6 @@ package sptech.school.imobiliaria.model;
 
 import java.math.BigDecimal;
 
-/**
- * Representa o recurso "Imovel", conforme o contrato de API combinado com o front-end.
- * Usado tanto para receber o corpo do POST quanto para montar as respostas dos GETs.
- */
 public class Imovel {
 
     private Long id;

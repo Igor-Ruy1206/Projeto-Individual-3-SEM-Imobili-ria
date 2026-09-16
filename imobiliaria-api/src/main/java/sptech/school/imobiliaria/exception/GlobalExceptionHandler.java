@@ -9,11 +9,6 @@ import sptech.school.imobiliaria.dto.ErroResposta;
 
 import java.util.List;
 
-/**
- * Centraliza a tradução de exceções em respostas HTTP coerentes,
- * garantindo que o servidor rejeite requisições inválidas mesmo
- * quando enviadas direto por Postman/Insomnia/curl (sem passar pelo front).
- */
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
@@ -32,11 +27,6 @@ public class GlobalExceptionHandler {
         return ResponseEntity.badRequest().body(corpo);
     }
 
-    /**
-     * Captura JSON malformado ou valor de "tipo" fora do enum
-     * (ex: {"tipo": "GALPAO"}), devolvendo 400 em vez de deixar
-     * o Spring estourar um 500 genérico.
-     */
     @ExceptionHandler(HttpMessageNotReadableException.class)
     public ResponseEntity<ErroResposta> tratarJsonInvalido(HttpMessageNotReadableException ex) {
         ErroResposta corpo = new ErroResposta(

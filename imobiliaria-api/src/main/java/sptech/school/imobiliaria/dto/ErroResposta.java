@@ -2,10 +2,6 @@ package sptech.school.imobiliaria.dto;
 
 import java.util.List;
 
-/**
- * Formato padrão de erro devolvido pela API (400 e 404),
- * já no formato acordado no contrato com o front-end.
- */
 public class ErroResposta {
 
     private String erro;
